@@ -1,0 +1,52 @@
+
+<head>
+    <title>
+        
+    </title>
+</head>
+
+<body>
+    <div class="container" style="margin-top:50px; ">
+        <h1><%= @selected_ice_cream.name %></h1>
+    
+    
+         <!-- 아이스크림 사진이랑 정보 보여줄 거야. -->
+
+          <div class="alert alert-warning" role="alert" style="margin-top:20px;">
+                
+                <!-- 그리고 이 게시글에 대한 댓글 입력할 폼이야. -->
+                <form action="/ice_cream_comment/create/<%= @selected_ice_cream.id %>" method="post">
+                    
+                    <!--댓글 입력하렴-->
+                    <input type="hidden" name="ice_cream_id" value="<%= @selected_ice_cream.id %>" > <!-- hidden으로 아이스크림 아이디 컨트롤러에전달 -->
+                    <textarea class="form-control" id="ice_cream_comment_content_text" rows="1" name="comment_input_content"> </textarea>
+                    <!-- 댓글 달기 버튼이야 -->
+                    <button type="submit" class="btn btn-primary">submit comment</button>
+                      
+                     <!-- 댓글 반복 구간이야. -->
+                    <div class="form-group">
+                        <label for="exampleTextarea">comments </label>
+                    
+                            <!--일단 댓글 보여줄거야.-->
+                          <% @selected_ice_cream.ice_cream_comments.each do |comment| %>
+                            <p>- <%= comment.content %></p>
+                          <% end %>
+                          
+                     </div>
+                    
+                 
+            </form>
+                
+                
+            
+            <!--각각의 게시글 끝나는 지점이야. -->
+          </div>
+  
+    
+    </div>
+    
+   
+    
+</body>
+
+

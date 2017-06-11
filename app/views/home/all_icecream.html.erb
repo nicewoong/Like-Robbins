@@ -29,7 +29,7 @@
 						<% @allIceCreams.each do |eachIceCream|%>
 						<!--반복 시작-->
 						<li class="item" style="list-style:none"><!-- 페이지당 20개 출력 -->
-							<a href="#" class="product icecream">
+							<a href="/ice_cream_comment/show_comments/<%= eachIceCream.id %>" class="product icecream">
 								<figure >
 									<figcaption>
 										<span>
