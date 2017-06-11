@@ -1,17 +1,34 @@
 
-<head>
-    <title>
-        
-    </title>
-</head>
 
+<div align="center" style="background-image:URL(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif); margin-top:10px;">
+    <img src ="http://postfiles9.naver.net/MjAxNzA2MDJfMTYw/MDAxNDk2NDEzODEwNjM4.irj6fJ8r1Rg6Kgo3VPyEOIx_hvPXIjQsFKqDYvMi9aIg.xjoBhqBZhSAXRjIE067-KChbw6Ggvzv81LJtQt7HoTcg.PNG.dkw102535/KakaoTalk_20170602_232925076.png?type=w3" style="margin-top:10px">
+</div>
+	 <!-- Navigation -->
+<div class="nav_1" style="margin-top:15px; font-family: 나눔고딕;">
+	<ul>
+  		<li><a href="/index">Home</a></li>
+  		<li><a href="/all_icecream">All Icecream</a></li>
+  		<li><a href="http://www.baskinrobbins.co.kr/">BaskinrobbinsPage</a></li>
+  		<li><a href="/developer">Developer</a></li>
+	</ul>
+ </div>  
+ <!-- 위에는 상위 메뉴 있는 뷰 복붙 한거야. -->
+ 
+ 
 <body>
     <div class="container" style="margin-top:50px; ">
-        <h1><%= @selected_ice_cream.name %></h1>
+        <!-- 아이스크림 사진이랑 정보 보여줄 거야. -->
+        <!-- 일단 아이스크림 이름이야 -->
+        <h1> <<%= @selected_ice_cream.name %>> 오또케 생각해?</h1>
     
     
-         <!-- 아이스크림 사진이랑 정보 보여줄 거야. -->
+        <!-- 아이스크림 사진 보여줄거야 -->
+        
 
+
+
+
+        <!-- 아래에는 댓글다는 폼, 댓글들 보여줄 거야. -->
           <div class="alert alert-warning" role="alert" style="margin-top:20px;">
                 
                 <!-- 그리고 이 게시글에 대한 댓글 입력할 폼이야. -->
@@ -20,10 +37,14 @@
                     <!--댓글 입력하렴-->
                     <input type="hidden" name="ice_cream_id" value="<%= @selected_ice_cream.id %>" > <!-- hidden으로 아이스크림 아이디 컨트롤러에전달 -->
                     <textarea class="form-control" id="ice_cream_comment_content_text" rows="1" name="comment_input_content"> </textarea>
+                    
                     <!-- 댓글 달기 버튼이야 -->
+                    <br>
                     <button type="submit" class="btn btn-primary">submit comment</button>
+                    <br><br>
+
                       
-                     <!-- 댓글 반복 구간이야. -->
+                    <!-- 댓글 반복 구간이야. -->
                     <div class="form-group">
                         <label for="exampleTextarea">comments </label>
                     
