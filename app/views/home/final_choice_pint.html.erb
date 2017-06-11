@@ -1,0 +1,41 @@
+ <style>
+    body {
+      background-image: url('http://postfiles6.naver.net/MjAxNzA1MjlfMjQw/MDAxNDk2MDQ5ODc4NTA4.SSAJ0U70Y3h39aVS4nLy-crGlNnTkhLazxEbjkn2uzQg.xuLVoXNfQJBu0krSHS6EqfRCk7JGqB4kdYyrNRcuJzUg.PNG.jjjung_in_96/%EB%B0%B0%EB%9D%BC%EB%B0%B0%EA%B2%BD.png?type=w2')
+    }
+    }
+  </style>
+
+  <div class="row justify-content-center" style = "text-align: center; margin-top: 50px; ">
+  <div><img src = "http://postfiles6.naver.net/MjAxNzA2MDNfMTI3/MDAxNDk2NDQxMjcxMzk4.cpMexGRw5gd3FTAw_87KGxBVgmjBOASWbjV0-yk_LLMg.IHTsXi36iusut1j39sZSo7I5cgg00VnD5pOBwpk-Zx0g.PNG.jjjung_in_96/%EC%9D%B4%EA%B1%B0%EB%93%80.png?type=w2" style="max-width: 100%; height: auto;">
+  </div>
+</div>
+    <br>
+    <div class="row justify-content-center">
+        
+        <!-- 최종 선택된 네가지 아이스크림을 보여주겠습니다. (반복문으로 돌리겠습니다.)-->
+        <% @chosenIceCreamArray.each do |eachIceCream| %>
+           <a style="float:left;" >
+    			<div class="img final3">
+    			    <span><img src="http://www.baskinrobbins.co.kr/upload/product/<%=eachIceCream%>.png" alt="" height="250px" width="250px"></span>
+    			    <h4 style="color: #ffe99a; font-family: 나눔고딕"><strong> 
+    			        <%= IceCream.where(:number=>eachIceCream).take.name %><!--아이스크림 이름!-->
+    			    </strong></h4>
+    			</div>
+	    	</a>
+        <% end %>
+
+		
+	</div>
+<div align="center" style="margin-bottom:50px; margin-top:30px; font-family: 나눔고딕; color: #9c354f">
+	<div class="card" style="width: 50rem;">
+        <h5 class="card-header"align="left">Price</h5>
+            <div class="card-block">
+                <h6 class="card-title"align="left">컵 종류: <strong>파인트</strong> / 가격 : <strong>7200원</strong> </h6>
+                <a href="/home/index" class="btn btn-warning"align="right">홈으로 가기</a>
+                 <!--<a href="/home/sorry" class="btn btn-warning"align="right">이전으로</a>-->
+              </div>
+    </div>
+</div>
+
+
+  

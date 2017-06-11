@@ -1,0 +1,63 @@
+
+<div align="center" style="background-image:URL(http://www.baskinrobbins.co.kr/assets/images/common/bg_header.gif); margin-top:10px;">
+    <img src ="http://postfiles9.naver.net/MjAxNzA2MDJfMTYw/MDAxNDk2NDEzODEwNjM4.irj6fJ8r1Rg6Kgo3VPyEOIx_hvPXIjQsFKqDYvMi9aIg.xjoBhqBZhSAXRjIE067-KChbw6Ggvzv81LJtQt7HoTcg.PNG.dkw102535/KakaoTalk_20170602_232925076.png?type=w3" style="margin-top:10px">
+</div>
+	 <!-- Navigation -->
+<div class="nav_1" style="margin-top:15px; font-family: 나눔고딕;">
+	<ul>
+  		<li><a href="/index">Home</a></li>
+  		<li><a href="/all_icecream">All Icecream</a></li>
+  		<li><a href="http://www.baskinrobbins.co.kr/">BaskinrobbinsPage</a></li>
+  		<li><a href="/developer">Developer</a></li>
+	</ul>
+ </div>  
+ 
+ 
+    <div class="inner_content" id="prd_list" style="margin-top:40px;" align="center">
+    	<aside class="list_product">
+					<h3 class="line_title top">
+						<span>
+							<!-- 카테고리 타이틀 -->
+						<img src="http://www.baskinrobbins.co.kr/assets/images/common/icon_title_1.png" style="margin-right:4px"><img src="http://www.baskinrobbins.co.kr/assets/images/menu/h_title_A.png" alt=""><img src="http://www.baskinrobbins.co.kr/assets/images/common/icon_title_2.png" style="margin-left:4px">
+						</span>
+					</h3>
+					
+				<!-- 목록 보여주기 -->
+				<div style="margin-top:50px;">
+					<ul class="list" >
+						
+						<% @allIceCreams.each do |eachIceCream|%>
+						<!--반복 시작-->
+						<li class="item" style="list-style:none"><!-- 페이지당 20개 출력 -->
+							<a href="#" class="product icecream">
+								<figure >
+									<figcaption>
+										<span>
+											<%= eachIceCream.name %><!--이름-->
+										</span>
+									</figcaption>
+									<span ><img src="http://www.baskinrobbins.co.kr/upload/product/<%= eachIceCream.number %>.png" alt=""></span>
+								</figure>
+							</a>
+
+
+							<div class="hashtag_buy" align="center">
+								<div class="hashtag1" data-api="hashtag1">
+									<ul>
+										<li>
+											<a ><%= eachIceCream.keywords %></a>
+										</li>
+									</ul>
+																		
+								</div>
+							</div>
+						</li>
+						<!--반복끝-->
+						<% end %>
+					
+					 
+					 
+				    </ul>
+                </div>
+		</aside>
+    </div>

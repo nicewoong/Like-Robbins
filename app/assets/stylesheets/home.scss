@@ -1,0 +1,163 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.br_menu_main .menu_more {
+    display:block;
+    width:70px; height:20px;
+    margin:10px auto 25px;
+    border-radius:25px; border:2px solid #ece2de; color:#a48e74; font-size:11px; line-height:22px;}
+
+#br_menu #content {width:auto;}
+#br_menu #content .inner_content {width:1000px; margin:0 auto;}
+.best_icecream { background-color:#E8F3F8; }
+.best_icecream .title { text-align:center; margin-bottom:20px;}
+.best_icecream .slider {overflow:hidden; position:relative; min-width:1200px; height:450px;}
+.best_icecream .list_wrap {/* position:absolute; */ margin:0 auto; text-align:center;}
+.best_icecream .list_wrap ul {display:inline-block;}
+.best_icecream .list_wrap ul:after {display:table; clear:both; content:"";}
+.best_icecream .list_wrap li {float:left; width:218px; text-align:center;}
+.best_icecream .list_wrap a {display:block; margin:0 27px;}
+.best_icecream .list_wrap .img {position:relative; width:164px; height:164px; margin:5px 0 7px; border-radius:82px; background:#f4f4f4 url("http://www.baskinrobbins.co.kr/assets/images/menu/bg_icecream_corn.png") 50% 100% no-repeat; background-size:40px auto; text-align:center; line-height:82px;}
+.best_icecream .list_wrap .img:before {position:absolute; top:-5px; left:50%; width:31px; height:38px; margin:0px 0 0 -15px; background:url("http://www.baskinrobbins.co.kr/assets/images/menu/icon_rank_4.png") no-repeat; content:"";}
+.best_icecream .list_wrap .top0 .img {background-color:#ffe1e7;}
+.best_icecream .list_wrap .top1 .img {background-color:#ffd884;}
+.best_icecream .list_wrap .top2 .img {background-color:#e3d2bd;}
+.best_icecream .list_wrap .top0 .img:before {background-image:url("http://www.baskinrobbins.co.kr/assets/images/menu/icon_rank_1.png");}
+.best_icecream .list_wrap .top1 .img:before {background-image:url("http://www.baskinrobbins.co.kr/assets/images/menu/icon_rank_2.png");}
+.best_icecream .list_wrap .top2 .img:before {background-image:url("http://www.baskinrobbins.co.kr/assets/images/menu/icon_rank_3.png");}
+.best_icecream .list_wrap .img strong {display:inline-block; position:absolute; top:6px; left:68px; width:30px; color:#fff; font-size:11px; font-weight:normal; text-align:center; line-height:11px; letter-spacing:-.01em}
+.best_icecream .list_wrap .img img {width:140px; margin-top:22px;}
+.best_icecream .list_wrap .ice_name {color:#918983;}
+
+#br_menu .tabmenu {margin-top:0;}
+.br_menu_main .list_product .list {margin-top:0; border-left:1px solid #ebebeb; }
+.list_product .list:after {display:table; clear:both; content:"";}
+.list_product .list .item {position:relative; float:left; width:25%; margin-top:-1px; border:1px solid #ebebeb; border-width:1px 1px 1px 0px; text-align:center; box-sizing:border-box;}
+.br_search_result .list {border-left:1px solid #ebebeb;}
+.br_search_result .list .item {margin-top:0; border-width:0 1px 1px 0px;}
+
+ .hashtag {
+  clear: left;
+  height: 35px;
+  width: 200px;
+  margin-right: 10px;
+  padding: 5px;
+  float: left;
+  border-width: 1px;
+  border-color: #ffe99a;
+  border-style: dashed;
+  border-radius: 10em 0 5em 2em;
+  text-align: center;
+}
+
+.final3 {
+  clear: left;
+  height: 350px;
+  width: 250px;
+  margin-right: 10px;
+  padding: 5px;
+  float: left;
+  border-width: 4px;
+  border-color: #ffe99a;
+  border-style: dashed;
+  border-radius: 10em;
+  text-align: center;
+}
+
+.sorry_box {
+  clear: left;
+  height: 350px;
+  width: 250px;
+  margin-right: 10px;
+  padding: 5px;
+  float: left;
+  border-width: 4px;
+  border-color: #90cedb;
+  border-style: dashed;
+  border-radius: 10em;
+  text-align: center;
+}
+
+.more {
+        padding: 20px;
+        font-size: 10px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #ffffff;
+        background-color: rgba( 255, 255, 255, 0.6 );
+        border-radius: 10px;
+        margin-top:-100px;
+      }
+      
+.vs {
+    margin-top:-200px;
+    }
+      
+      
+.nav_1 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #315E8A;
+}
+
+.nav_1 li {
+    float: left;
+}
+
+.nav_1 li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.nav_1 li a:hover {
+    background-color: #111;
+}
+
+
+.list_product .list .item > div:after {position:absolute; left:10px; top:10px; width:279px; height:278px; background:#fff; content:""; z-index:-1; border-radius:10px;}
+.list_product .list .item .plan:after {background:#f4f4f4;}
+.list_product .list .item .decide:after {background:#ffebf0;}
+
+.list_product .icon-txt {position:absolute; top:120px; right:32px; width:69px; height:24px; line-height:24px; font-size:12px; border-radius:35px; background:#fff;}
+.list_product .review .icon-txt {border:2px solid #d2a976; color:#d1a773;}
+.list_product .plan .icon-txt {border:2px solid #ff852a; color:#ff8830;}
+.list_product .decide .icon-txt {border:2px solid #ff7c98; color:#ff436b;}
+.list_product .review .icon-txt:before {position:absolute; top:24px; left:20px; border:5px solid transparent; border-top:5px solid #d1a773; border-left:5px solid #d1a773; content:"";}
+.list_product .review .icon-txt:after {position:absolute; left:22px; top:21px; border:4px solid transparent; border-top:4px solid #fff; border-left:4px solid #fff; content:"";}
+.list_product .plan .icon-txt:before {position:absolute; top:24px; left:20px; border:5px solid transparent; border-top:5px solid #ff8830; border-left:5px solid #ff8830; content:"";}
+.list_product .plan .icon-txt:after {position:absolute; left:22px; top:21px; border:4px solid transparent; border-top:4px solid #fff; border-left:4px solid #fff; content:"";}
+.list_product .decide .icon-txt:before {position:absolute; top:24px; left:20px; border:5px solid transparent; border-top:5px solid #ff436b; border-left:5px solid #ff436b; content:"";}
+.list_product .decide .icon-txt:after {position:absolute; left:22px; top:21px; border:4px solid transparent; border-top:4px solid #fff; border-left:4px solid #fff; content:"";}
+
+.br_menu_list .list_product .list .item {border-width:0 1px 1px 0;}
+.br_menu_list .list_product .list {overflow:hidden; margin-top:0; border-left:1px solid #ebebeb; border-top:1px solid #ebebeb;}
+.br_menu_list .list_product .list li {margin-left:-1px;}
+.br_menu_list .list_product .list:after {content:""; display:table; clear:both;}
+.list_product .list .product {display:block; height:250px; }
+.list_product figure {font-size:18px;}
+.list_product figure figcaption {display:table; width:100%; height:56px; font-weight:normal; line-height:1.2;}
+.list_product figure figcaption span {display:table-cell; vertical-align:bottom;}
+.list_product figure .img {display:block; position:absolute; top:120px; left:50%; width:160px; margin-left:-80px; text-align:center;}
+.list_product figure img {width:160px;}
+.list_product .icecream {background:url("http://www.baskinrobbins.co.kr/assets/images/menu/bg_icecream_corn_2.png") 50% 100% no-repeat; background-size:50px auto;}
+.list_product .icecream figure .img {display:block; position:absolute; top:111px; left:50%; width:180px; margin-left:-90px; text-align:center;}
+.list_product .icecream figure img {width:180px;}
+.list_product .hashtag_buy {position:absolute; top:57px; left:0; width:100%;}
+.list_product .hashtag1 {margin:0 auto;}
+.list_product .hashtag1,
+.list_product .hashtag1 ul:after {display:table; clear:both; content:"";}
+.list_product .hashtag1 ul,
+.list_product .hashtag1 .btns {float:left;}
+.list_product .hashtag1 li {display:inline-block; padding-right:5px;}
+.list_product .hashtag1 li a {color:#9d9d9d; font-weight:300;}
+.list_product .hashtag1 .btns {width:17px;}
+.list_product .hashtag1 .btns a {display:block; height:17px; background:url("http://www.baskinrobbins.co.kr/assets/images/common/icon_more.gif") no-repeat; text-indent:-9999em;}
+.list_product .buy {width:58px; padding-top:7px; margin:0 auto;}
+.list_product .buy a {display:block; width:100%; height:21px; border-radius:10px; background-color:#d3c1ab; color:#fff; font-size:11px; text-align:center; line-height:23px;}
+
