@@ -15,15 +15,26 @@
  <!-- 위에는 상위 메뉴 있는 뷰 복붙 한거야. -->
  
  
+ <!---->
+ <!---->
+ <!---->
+ <!---->
+ <!---->
+ 
 <body>
     <div class="container" style="margin-top:50px; ">
         <!-- 아이스크림 사진이랑 정보 보여줄 거야. -->
         <!-- 일단 아이스크림 이름이야 -->
-        <h1> <<%= @selected_ice_cream.name %>> 오또케 생각해?</h1>
+        <!--<h1> <<%= @selected_ice_cream.name %>> 오또케 생각해?</h1>-->
+        <h1><%= @selected_ice_cream.name %></h1>
     
     
         <!-- 아이스크림 사진 보여줄거야 -->
-        
+        <div class="form-check form-check-inline">
+            <img src="http://www.baskinrobbins.co.kr/upload/product/<%=@selected_ice_cream.number%>.png" style="max-width: 50%; height: auto">
+            <a href="/all_icecream" role="button" class="btn btn-outline-warning">Go to all ice cream list</a>
+            </br> 
+         </div> 
 
 
 
